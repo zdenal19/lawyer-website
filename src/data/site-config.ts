@@ -52,6 +52,7 @@ export const teamCategories: TeamCategory[] = [
       { name: "Mgr. Václav Rožec", role: "Advokát", photo: "/team/rozec-vaclav.jpg" },
       { name: "JUDr. Ludvík Ševčík, ml.", role: "Advokát", photo: "/team/sevcik-ludvik-ml.jpg" },
       { name: "Mgr. Bc. Martin Kotrbáček", role: "Advokát", photo: "/team/kotrbacek-martin.jpg" },
+      { name: "Mgr. Zdeněk Vystrčil", role: "Advokát", photo: "/team/vystrcil-zdenek.jpg" },
     ],
   },
   {
@@ -64,7 +65,6 @@ export const teamCategories: TeamCategory[] = [
     title: "Advokátní koncipienti",
     members: [
       { name: "Mgr. Jáchym Vaněk", role: "Advokátní koncipient", photo: "/team/vanek-jachym.jpg" },
-      { name: "Mgr. Zdeněk Vystrčil", role: "Advokátní koncipient", photo: "/team/vystrcil-zdenek.jpg" },
     ],
   },
   {
