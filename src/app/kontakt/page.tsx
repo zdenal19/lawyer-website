@@ -16,7 +16,7 @@ export default function KontaktPage() {
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Kontakt
           </h1>
           <GoldDivider className="my-6" />
@@ -28,7 +28,7 @@ export default function KontaktPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact form */}
           <div className="lg:col-span-2">
-            <h2 className="font-serif text-2xl text-cream mb-6">
+            <h2 className="font-serif text-2xl text-[#0A0A0A] mb-6">
               Napište nám
             </h2>
             <ContactForm />
@@ -36,7 +36,7 @@ export default function KontaktPage() {
 
           {/* Contact info sidebar */}
           <div className="space-y-6">
-            <h2 className="font-serif text-2xl text-cream mb-6">
+            <h2 className="font-serif text-2xl text-[#0A0A0A] mb-6">
               Kontaktní údaje
             </h2>
 
@@ -81,7 +81,7 @@ export default function KontaktPage() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="flex items-start gap-4 p-4 bg-dark-lighter rounded-lg"
+                className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg"
               >
                 <item.icon size={20} className="text-gold flex-shrink-0 mt-0.5" />
                 <div>
@@ -91,19 +91,19 @@ export default function KontaktPage() {
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="text-cream hover:text-gold transition-colors"
+                      className="text-[#0A0A0A] hover:text-gold transition-colors"
                     >
                       {item.value}
                     </a>
                   ) : (
-                    <p className="text-cream">{item.value}</p>
+                    <p className="text-[#0A0A0A]">{item.value}</p>
                   )}
                 </div>
               </div>
             ))}
 
             {/* Map placeholder */}
-            <div className="rounded-xl overflow-hidden border border-dark-lighter h-48 bg-dark-lighter flex items-center justify-center">
+            <div className="rounded-xl overflow-hidden border border-gray-200 h-48 bg-gray-50 flex items-center justify-center">
               <div className="text-center">
                 <MapPin size={32} className="text-gold mx-auto mb-2" />
                 <p className="text-gray-500 text-sm">Mapa se zobrazí zde</p>

@@ -68,19 +68,19 @@ export default async function ServiceDetailPage({
               <IconComponent size={36} className="text-gold" />
             </div>
           )}
-          <h1 className="font-serif text-3xl md:text-4xl text-cream">
+          <h1 className="font-serif text-3xl md:text-4xl text-[#0A0A0A]">
             {service.title}
           </h1>
         </div>
 
         <GoldDivider className="my-8 !mx-0 !max-w-none" />
 
-        <div className="prose prose-invert max-w-none">
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">
+        <div className="prose prosemax-w-none">
+          <p className="text-gray-600 text-lg leading-relaxed mb-8">
             {service.fullDescription}
           </p>
 
-          <h2 className="font-serif text-2xl text-cream mb-6">
+          <h2 className="font-serif text-2xl text-[#0A0A0A] mb-6">
             Co pro vás zajistíme
           </h2>
 
@@ -88,16 +88,16 @@ export default async function ServiceDetailPage({
             {service.features.map((feature) => (
               <div
                 key={feature}
-                className="flex items-start gap-3 p-4 rounded-lg bg-dark-lighter"
+                className="flex items-start gap-3 p-4 rounded-lg bg-gray-50"
               >
                 <CheckCircle size={20} className="text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300">{feature}</span>
+                <span className="text-gray-600">{feature}</span>
               </div>
             ))}
           </div>
 
-          <div className="bg-dark-lighter border border-dark-lighter rounded-xl p-8 text-center">
-            <h3 className="font-serif text-2xl text-cream mb-3">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 text-center">
+            <h3 className="font-serif text-2xl text-[#0A0A0A] mb-3">
               Máte zájem o tuto službu?
             </h3>
             <p className="text-gray-400 mb-6">

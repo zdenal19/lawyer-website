@@ -16,7 +16,7 @@ export default function TymPage() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Náš tým
           </h1>
           <GoldDivider className="my-6" />
@@ -27,14 +27,14 @@ export default function TymPage() {
         </div>
 
         {/* About the firm */}
-        <div className="bg-dark-lighter rounded-xl p-8 border border-dark-lighter mb-16">
+        <div className="bg-gray-50 rounded-xl p-8 border border-gray-200 mb-16">
           <div className="flex items-start gap-4 mb-6">
             <Users size={32} className="text-gold flex-shrink-0 mt-1" />
             <div>
-              <h2 className="font-serif text-2xl text-cream mb-3">
+              <h2 className="font-serif text-2xl text-[#0A0A0A] mb-3">
                 O kanceláři
               </h2>
-              <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Společná advokátní kancelář (SAK) sídlí v centru Brna na
                   adrese {siteConfig.address.street} ({siteConfig.address.building}).
@@ -56,7 +56,7 @@ export default function TymPage() {
         {/* Team categories */}
         {teamCategories.map((category) => (
           <div key={category.title} className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-cream mb-2">
+            <h2 className="font-serif text-2xl md:text-3xl text-[#0A0A0A] mb-2">
               {category.title}
             </h2>
             <div className="w-12 h-px bg-gold mb-8" />
@@ -67,7 +67,7 @@ export default function TymPage() {
                   key={member.name}
                   className="group"
                 >
-                  <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-dark-lighter border border-dark-lighter group-hover:border-gold/30 transition-all duration-300">
+                  <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-3 bg-gray-50 border border-gray-200 group-hover:border-gold/30 transition-all duration-300">
                     <Image
                       src={member.photo}
                       alt={member.name}
@@ -76,7 +76,7 @@ export default function TymPage() {
                       sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                     />
                   </div>
-                  <h3 className="font-serif text-base md:text-lg text-cream group-hover:text-gold transition-colors">
+                  <h3 className="font-serif text-base md:text-lg text-[#0A0A0A] group-hover:text-gold transition-colors">
                     {member.name}
                   </h3>
                   <p className="text-gray-500 text-sm">

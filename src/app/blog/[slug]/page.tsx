@@ -51,7 +51,7 @@ export default async function BlogPostPage({
           {post.category}
         </span>
 
-        <h1 className="font-serif text-3xl md:text-4xl text-cream mb-4">
+        <h1 className="font-serif text-3xl md:text-4xl text-[#0A0A0A] mb-4">
           {post.title}
         </h1>
 
@@ -70,18 +70,18 @@ export default async function BlogPostPage({
 
         {/* Article content */}
         <div
-          className="prose prose-invert prose-lg max-w-none
-            prose-headings:font-serif prose-headings:text-cream
-            prose-p:text-gray-300 prose-p:leading-relaxed
+          className="prose proseprose-lg max-w-none
+            prose-headings:font-serif prose-headings:text-[#0A0A0A]
+            prose-p:text-gray-600 prose-p:leading-relaxed
             prose-a:text-gold prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-cream
-            prose-li:text-gray-300"
+            prose-strong:text-[#0A0A0A]
+            prose-li:text-gray-600"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
         {/* CTA */}
-        <div className="mt-16 bg-dark-lighter rounded-xl p-8 text-center border border-dark-lighter">
-          <h3 className="font-serif text-xl text-cream mb-2">
+        <div className="mt-16 bg-gray-50 rounded-xl p-8 text-center border border-gray-200">
+          <h3 className="font-serif text-xl text-[#0A0A0A] mb-2">
             Potřebujete poradit?
           </h3>
           <p className="text-gray-400 mb-4">

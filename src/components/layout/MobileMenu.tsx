@@ -22,13 +22,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           animate={{ x: 0 }}
           exit={{ x: "100%" }}
           transition={{ type: "tween", duration: 0.3 }}
-          className="fixed inset-0 z-50 bg-[#0A0A0A]/98 flex flex-col md:hidden"
+          className="fixed inset-0 z-50 bg-white/98 flex flex-col md:hidden"
         >
           {/* Close button */}
           <div className="flex justify-end p-4">
             <button
               onClick={onClose}
-              className="text-gray-300 hover:text-[#C9A84C] transition"
+              className="text-gray-600 hover:text-[#C9A84C] transition"
               aria-label="Zavřít menu"
             >
               <X className="h-6 w-6" />
@@ -48,7 +48,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   className={`block py-4 text-xl font-serif transition ${
                     pathname === item.href
                       ? "text-[#C9A84C]"
-                      : "text-gray-300 hover:text-[#C9A84C]"
+                      : "text-[#0A0A0A] hover:text-[#C9A84C]"
                   }`}
                 >
                   {item.label}
@@ -58,7 +58,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </nav>
 
           {/* Contact Info */}
-          <div className="p-8 text-center space-y-2 text-gray-400 text-sm">
+          <div className="p-8 text-center space-y-2 text-gray-500 text-sm">
             <a
               href={`tel:${siteConfig.phone}`}
               className="block hover:text-[#C9A84C] transition"

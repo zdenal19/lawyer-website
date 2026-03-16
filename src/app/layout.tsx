@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-dark text-cream`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-white text-[#0A0A0A]`}
       >
         <Header />
         <main className="min-h-screen">{children}</main>

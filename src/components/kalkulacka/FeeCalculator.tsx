@@ -62,7 +62,7 @@ export default function FeeCalculator() {
   };
 
   const inputClasses =
-    "w-full bg-[#141414] border border-[#333] rounded-lg px-4 py-3 text-[#F5F0E8] focus:border-[#C9A84C] focus:outline-none focus:ring-1 focus:ring-[#C9A84C] transition-colors";
+    "w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-[#0A0A0A] focus:border-[#C9A84C] focus:outline-none focus:ring-1 focus:ring-[#C9A84C] transition-colors";
   const labelClasses =
     "block text-sm text-gray-400 uppercase tracking-wider mb-2";
 
@@ -70,7 +70,7 @@ export default function FeeCalculator() {
     <div className="w-full max-w-2xl mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="bg-[#141414] border border-[#1a1a1a] rounded-2xl p-8 space-y-6"
+        className="bg-white border border-gray-200 rounded-2xl p-8 space-y-6"
       >
         {/* Typ služby */}
         <div>
@@ -129,7 +129,7 @@ export default function FeeCalculator() {
         {/* Submit */}
         <button
           type="submit"
-          className="w-full bg-[#C9A84C] hover:bg-[#b8993f] text-[#0A0A0A] font-semibold py-3 px-6 rounded-lg transition-colors"
+          className="w-full bg-[#D4BA6A] hover:bg-[#C9A84C] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
         >
           Spočítat odměnu
         </button>
@@ -144,22 +144,22 @@ export default function FeeCalculator() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.4, ease: "easeOut" as const }}
-            className="mt-8 bg-[#141414] border border-[#1a1a1a] rounded-2xl p-8 space-y-4"
+            className="mt-8 bg-white border border-gray-200 rounded-2xl p-8 space-y-4"
           >
-            <h3 className="font-serif text-xl text-[#F5F0E8] mb-4">
+            <h3 className="font-serif text-xl text-[#0A0A0A] mb-4">
               Orientační kalkulace
             </h3>
 
             <div className="space-y-3">
-              <div className="flex justify-between items-center py-2 border-b border-[#222]">
+              <div className="flex justify-between items-center py-2 border-b border-gray-200">
                 <span className="text-gray-400">Základní cena</span>
-                <span className="text-[#F5F0E8]">
+                <span className="text-[#0A0A0A]">
                   {formatCZK.format(result.basePrice)}
                 </span>
               </div>
-              <div className="flex justify-between items-center py-2 border-b border-[#222]">
+              <div className="flex justify-between items-center py-2 border-b border-gray-200">
                 <span className="text-gray-400">Koeficient náročnosti</span>
-                <span className="text-[#F5F0E8]">
+                <span className="text-[#0A0A0A]">
                   {result.complexityMultiplier}&times;
                 </span>
               </div>
@@ -182,7 +182,7 @@ export default function FeeCalculator() {
             </p>
 
             {/* CTA */}
-            <div className="mt-6 pt-4 border-t border-[#222]">
+            <div className="mt-6 pt-4 border-t border-gray-200">
               <p className="text-gray-400 mb-3">Chcete přesnou nabídku?</p>
               <Link
                 href="/kontakt"

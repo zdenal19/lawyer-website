@@ -14,7 +14,7 @@ export default function ReferencePage() {
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Reference
           </h1>
           <GoldDivider className="my-6" />
@@ -27,7 +27,7 @@ export default function ReferencePage() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-dark-lighter rounded-xl p-8 border border-dark-lighter relative"
+              className="bg-gray-50 rounded-xl p-8 border border-gray-200 relative"
             >
               <Quote
                 size={32}
@@ -43,18 +43,18 @@ export default function ReferencePage() {
                     className={
                       i < testimonial.rating
                         ? "text-gold fill-gold"
-                        : "text-gray-600"
+                        : "text-gray-300"
                     }
                   />
                 ))}
               </div>
 
-              <p className="text-gray-300 italic leading-relaxed mb-6">
+              <p className="text-gray-600 italic leading-relaxed mb-6">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
 
               <div>
-                <p className="text-cream font-semibold">{testimonial.name}</p>
+                <p className="text-[#0A0A0A] font-semibold">{testimonial.name}</p>
                 <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </div>
             </div>

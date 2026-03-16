@@ -20,9 +20,9 @@ const fadeUp = {
 
 export default function Stats() {
   return (
-    <section className="bg-[#0A0A0A] py-20">
+    <section className="bg-white py-20 border-y border-gray-100">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-[#C9A84C]/20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-[#C9A84C]/30">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
@@ -36,7 +36,7 @@ export default function Stats() {
               <p className="font-serif text-4xl md:text-5xl text-[#C9A84C] mb-2">
                 {stat.value}
               </p>
-              <p className="text-gray-400 font-sans text-sm uppercase tracking-wider">
+              <p className="text-gray-500 font-sans text-sm uppercase tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

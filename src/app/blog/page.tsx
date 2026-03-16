@@ -16,7 +16,7 @@ export default function BlogPage() {
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Blog & Aktuality
           </h1>
           <GoldDivider className="my-6" />
@@ -34,7 +34,7 @@ export default function BlogPage() {
               className={`px-4 py-2 rounded-full text-sm cursor-pointer transition-colors ${
                 cat === "Vše"
                   ? "bg-gold text-dark font-medium"
-                  : "bg-dark-lighter text-gray-400 hover:text-gold hover:border-gold/30 border border-transparent"
+                  : "bg-gray-100 text-gray-400 hover:text-gold hover:border-gold/30 border border-transparent"
               }`}
             >
               {cat}

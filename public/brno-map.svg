@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <!-- Stylized map of Brno center - streets as golden lines -->
+
+  <!-- Major streets -->
+  <path d="M0 200 Q200 180 400 200 Q600 220 800 200" stroke="#C9A84C" stroke-width="1.5" opacity="0.3"/>
+  <path d="M100 0 Q120 100 130 200 Q140 300 150 400" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+  <path d="M300 0 Q310 80 320 160 Q340 280 350 400" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+  <path d="M500 0 Q490 100 480 200 Q470 300 460 400" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+  <path d="M680 0 Q670 120 660 200 Q650 300 640 400" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+
+  <!-- Secondary streets -->
+  <path d="M0 100 Q200 90 400 110 Q600 120 800 100" stroke="#C9A84C" stroke-width="0.8" opacity="0.15"/>
+  <path d="M0 300 Q200 310 400 290 Q600 280 800 300" stroke="#C9A84C" stroke-width="0.8" opacity="0.15"/>
+  <path d="M200 0 Q210 100 220 200 Q230 300 240 400" stroke="#C9A84C" stroke-width="0.8" opacity="0.15"/>
+  <path d="M580 0 Q570 100 575 200 Q580 300 585 400" stroke="#C9A84C" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- Tertiary streets - fine grid -->
+  <path d="M0 150 Q300 140 600 155 Q700 160 800 150" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M0 250 Q250 260 500 245 Q650 240 800 250" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M0 350 Q200 340 400 350 Q600 360 800 350" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M0 50 Q200 60 400 50 Q600 40 800 50" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M50 0 Q55 100 60 200 Q65 300 70 400" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M420 0 Q415 100 410 200 Q405 300 400 400" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+  <path d="M740 0 Q735 100 730 200 Q725 300 720 400" stroke="#C9A84C" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Kobližná area - emphasized intersection -->
+  <circle cx="400" cy="200" r="30" stroke="#C9A84C" stroke-width="1.5" opacity="0.25" fill="none"/>
+  <circle cx="400" cy="200" r="6" fill="#C9A84C" opacity="0.35"/>
+
+  <!-- Small block shapes suggesting buildings -->
+  <rect x="150" y="120" width="30" height="20" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="250" y="220" width="25" height="35" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="520" y="140" width="35" height="25" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="600" y="250" width="28" height="30" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="350" y="280" width="40" height="20" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="440" y="100" width="25" height="25" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="180" y="300" width="30" height="22" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+  <rect x="650" y="160" width="22" height="28" rx="2" stroke="#C9A84C" stroke-width="0.5" opacity="0.08"/>
+</svg>

@@ -19,7 +19,7 @@ const SERVICE_RATES: Record<
   { rate: number; minFee: number; label: string }
 > = {
   prevod: {
-    rate: 0.015,
+    rate: 0.01,
     minFee: 8000,
     label: "Převod nemovitosti",
   },

@@ -16,13 +16,23 @@ const fadeUp = {
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center bg-[#0A0A0A] overflow-hidden"
-      style={{
-        backgroundImage:
-          "radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, rgba(10,10,10,0) 70%)",
-      }}
+      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
     >
-      <div className="mx-auto max-w-4xl px-6 text-center">
+      {/* Geometric pattern background */}
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+            45deg,
+            #C9A84C 0px,
+            #C9A84C 1px,
+            transparent 1px,
+            transparent 40px
+          )`,
+        }}
+      />
+
+      <div className="relative mx-auto max-w-4xl px-6 text-center">
         {/* Label */}
         <motion.p
           className="text-[#C9A84C] text-sm uppercase tracking-widest font-sans mb-6"
@@ -51,22 +61,21 @@ export default function Hero() {
           animate="visible"
           custom={2}
         >
-          <span className="text-[#F5F0E8]">Právní služby</span>
+          <span className="text-[#0A0A0A]">Právní služby</span>
           <br />
           <span className="text-[#C9A84C]">efektivně a srozumitelně</span>
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
-          className="text-gray-400 font-sans text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-gray-500 font-sans text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           custom={3}
         >
-          Společná advokátní kancelář v Brně. Občanské, obchodní, trestní,
-          rodinné právo a další oblasti. Profesionální přístup s důrazem na
-          srozumitelnost a efektivitu.
+          Tradiční brněnská advokátní kancelář. Spojujeme právní erudici
+          s individuálním přístupem ke každému případu.
         </motion.p>
 
         {/* CTA buttons */}
@@ -79,7 +88,7 @@ export default function Hero() {
         >
           <Link
             href="/kontakt"
-            className="inline-block bg-[#C9A84C] text-[#0A0A0A] font-sans font-semibold px-8 py-4 rounded-lg hover:bg-[#b8993f] transition-colors duration-200"
+            className="inline-block bg-[#C9A84C] text-white font-sans font-semibold px-8 py-4 rounded-lg hover:bg-[#b8993f] transition-colors duration-200"
           >
             Nezávazná konzultace
           </Link>

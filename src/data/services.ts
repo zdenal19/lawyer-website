@@ -25,6 +25,53 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "obchodni-pravo",
+    title: "Obchodní právo",
+    shortDescription:
+      "Obchodní závazkové vztahy, smlouvy s mezinárodním prvkem, franšíza, cenné papíry.",
+    fullDescription:
+      "Poskytujeme právní služby v celém spektru obchodního práva. Připravujeme a revidujeme obchodní smlouvy včetně smluv s mezinárodním prvkem, zastupujeme klienty v obchodních sporech, poradíme s převody a nájmy podniků, franšízou a problematikou cenných papírů a nekalé soutěže.",
+    icon: "Scale",
+    features: [
+      "Obchodní závazkové vztahy a jejich zajištění",
+      "Obchodní smlouvy s mezinárodním prvkem",
+      "Převody a nájmy podniku",
+      "Franšíza a obchodní řetězce",
+      "Cenné papíry a nekalá soutěž",
+    ],
+  },
+  {
+    slug: "trestni-pravo",
+    title: "Trestní právo",
+    shortDescription:
+      "Obhajoby ve všech trestních věcech a stádiích trestního řízení.",
+    fullDescription:
+      "Poskytujeme obhajobu ve všech trestních věcech a ve všech stádiích trestního řízení. Využíváme řádné i mimořádné opravné prostředky a zastupujeme klienty v řízeních o náhradu škody způsobené státem při výkonu veřejné moci.",
+    icon: "Shield",
+    features: [
+      "Obhajoba ve všech stádiích trestního řízení",
+      "Řádné i mimořádné opravné prostředky",
+      "Zastupování proti státu — náhrada škody",
+      "Přípravné řízení a vyšetřování",
+    ],
+  },
+  {
+    slug: "korporacni-pravo",
+    title: "Korporační právo",
+    shortDescription:
+      "Zakládání a přeměny obchodních společností, koncernové právo, likvidace.",
+    fullDescription:
+      "Zajišťujeme kompletní právní servis pro obchodní společnosti od jejich založení přes změny v průběhu existence až po likvidaci. Pomáháme s přeměnami společností, řešíme koncernové vztahy a zastupujeme klienty ve věcech obchodního rejstříku.",
+    icon: "Landmark",
+    features: [
+      "Zakládání obchodních společností",
+      "Změny a přeměny obchodních společností",
+      "Koncernové právo",
+      "Obchodní rejstřík",
+      "Likvidace společností",
+    ],
+  },
+  {
     slug: "rodinne-pravo",
     title: "Rodinné právo",
     shortDescription:
@@ -56,35 +103,18 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "obchodni-pravo",
-    title: "Obchodní právo",
+    slug: "spravni-pravo",
+    title: "Správní právo",
     shortDescription:
-      "Obchodní závazkové vztahy, smlouvy s mezinárodním prvkem, franšíza, cenné papíry.",
+      "Katastr nemovitostí, stavební právo, přestupky, správní soudnictví.",
     fullDescription:
-      "Poskytujeme právní služby v celém spektru obchodního práva. Připravujeme a revidujeme obchodní smlouvy včetně smluv s mezinárodním prvkem, zastupujeme klienty v obchodních sporech, poradíme s převody a nájmy podniků, franšízou a problematikou cenných papírů a nekalé soutěže.",
-    icon: "Scale",
+      "Zastupujeme klienty v celé šíři správního práva. Řešíme veškerou agendu katastru nemovitostí, stavební právo, přestupky a správní řízení. Zastupujeme klienty ve správním soudnictví včetně řízení před Nejvyšším správním soudem.",
+    icon: "GanttChart",
     features: [
-      "Obchodní závazkové vztahy a jejich zajištění",
-      "Obchodní smlouvy s mezinárodním prvkem",
-      "Převody a nájmy podniku",
-      "Franšíza a obchodní řetězce",
-      "Cenné papíry a nekalá soutěž",
-    ],
-  },
-  {
-    slug: "korporacni-pravo",
-    title: "Korporační právo",
-    shortDescription:
-      "Zakládání a přeměny obchodních společností, koncernové právo, likvidace.",
-    fullDescription:
-      "Zajišťujeme kompletní právní servis pro obchodní společnosti od jejich založení přes změny v průběhu existence až po likvidaci. Pomáháme s přeměnami společností, řešíme koncernové vztahy a zastupujeme klienty ve věcech obchodního rejstříku.",
-    icon: "Landmark",
-    features: [
-      "Zakládání obchodních společností",
-      "Změny a přeměny obchodních společností",
-      "Koncernové právo",
-      "Obchodní rejstřík",
-      "Likvidace společností",
+      "Katastr nemovitostí — veškerá agenda",
+      "Stavební právo",
+      "Přestupky a správní řízení",
+      "Zastupování ve správním soudnictví",
     ],
   },
   {
@@ -100,36 +130,6 @@ export const services: Service[] = [
       "Správa majetkové podstaty",
       "Zastupování insolvenčních správců",
       "Spory vyvolané insolvencí",
-    ],
-  },
-  {
-    slug: "trestni-pravo",
-    title: "Trestní právo",
-    shortDescription:
-      "Obhajoby ve všech trestních věcech a stádiích trestního řízení.",
-    fullDescription:
-      "Poskytujeme obhajobu ve všech trestních věcech a ve všech stádiích trestního řízení. Využíváme řádné i mimořádné opravné prostředky a zastupujeme klienty v řízeních o náhradu škody způsobené státem při výkonu veřejné moci.",
-    icon: "Shield",
-    features: [
-      "Obhajoba ve všech stádiích trestního řízení",
-      "Řádné i mimořádné opravné prostředky",
-      "Zastupování proti státu — náhrada škody",
-      "Přípravné řízení a vyšetřování",
-    ],
-  },
-  {
-    slug: "spravni-pravo",
-    title: "Správní právo",
-    shortDescription:
-      "Katastr nemovitostí, stavební právo, přestupky, správní soudnictví.",
-    fullDescription:
-      "Zastupujeme klienty v celé šíři správního práva. Řešíme veškerou agendu katastru nemovitostí, stavební právo, přestupky a správní řízení. Zastupujeme klienty ve správním soudnictví včetně řízení před Nejvyšším správním soudem.",
-    icon: "GanttChart",
-    features: [
-      "Katastr nemovitostí — veškerá agenda",
-      "Stavební právo",
-      "Přestupky a správní řízení",
-      "Zastupování ve správním soudnictví",
     ],
   },
   {

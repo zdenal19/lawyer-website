@@ -13,7 +13,7 @@ export default function KalkulackaPage() {
     <div className="pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Kalkulačka odměn
           </h1>
           <GoldDivider className="my-6" />

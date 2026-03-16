@@ -26,32 +26,32 @@ export default function ContactForm() {
         setSuccessMessage(response.message);
         reset();
       } else {
-        setError(response.message || "Doslo k chybe pri odesilani zpravy.");
+        setError(response.message || "Došlo k chybě při odesílání zprávy.");
       }
     } catch {
-      setError("Doslo k neocekovane chybe. Zkuste to prosim znovu.");
+      setError("Došlo k neočekávané chybě. Zkuste to prosím znovu.");
     }
   };
 
   const inputClasses =
-    "w-full bg-[#141414] border border-[#333] rounded-lg px-4 py-3 text-[#F5F0E8] focus:border-[#C9A84C] focus:outline-none focus:ring-1 focus:ring-[#C9A84C] transition-colors";
+    "w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-[#0A0A0A] focus:border-[#C9A84C] focus:outline-none focus:ring-1 focus:ring-[#C9A84C] transition-colors";
   const labelClasses =
     "block text-sm text-gray-400 uppercase tracking-wider mb-2";
   const errorClasses = "text-red-400 text-sm mt-1";
 
   if (isSuccess) {
     return (
-      <div className="bg-[#141414] border border-[#1a1a1a] rounded-2xl p-8 text-center">
+      <div className="bg-white border border-gray-200 rounded-2xl p-8 text-center">
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h3 className="font-serif text-2xl text-[#F5F0E8] mb-2">
-          Zprava odeslana
+        <h3 className="font-serif text-2xl text-[#0A0A0A] mb-2">
+          Zpráva odeslána
         </h3>
         <p className="text-gray-400">{successMessage}</p>
         <button
           onClick={() => setIsSuccess(false)}
           className="mt-6 text-[#C9A84C] hover:text-[#b8993f] underline underline-offset-4 transition-colors"
         >
-          Odeslat dalsi zpravu
+          Odeslat další zprávu
         </button>
       </div>
     );
@@ -60,27 +60,27 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-[#141414] border border-[#1a1a1a] rounded-2xl p-8 space-y-6"
+      className="bg-white border border-gray-200 rounded-2xl p-8 space-y-6"
       noValidate
     >
-      {/* Name */}
+      {/* Jméno */}
       <div>
         <label htmlFor="name" className={labelClasses}>
-          Jmeno a prijmeni
+          Jméno a příjmení
         </label>
         <input
           id="name"
           type="text"
-          placeholder="Jan Novak"
+          placeholder="Jan Novák"
           className={inputClasses}
           {...register("name", {
-            required: "Jmeno je povinne",
+            required: "Jméno je povinné",
           })}
         />
         {errors.name && <p className={errorClasses}>{errors.name.message}</p>}
       </div>
 
-      {/* Email */}
+      {/* E-mail */}
       <div>
         <label htmlFor="email" className={labelClasses}>
           E-mail
@@ -91,7 +91,7 @@ export default function ContactForm() {
           placeholder="jan@priklad.cz"
           className={inputClasses}
           {...register("email", {
-            required: "E-mail je povinny",
+            required: "E-mail je povinný",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: "Zadejte platnou e-mailovou adresu",
@@ -103,10 +103,10 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Phone */}
+      {/* Telefon */}
       <div>
         <label htmlFor="phone" className={labelClasses}>
-          Telefon (volitelne)
+          Telefon (volitelné)
         </label>
         <input
           id="phone"
@@ -117,43 +117,46 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Service Type */}
+      {/* Typ služby */}
       <div>
         <label htmlFor="serviceType" className={labelClasses}>
-          Typ sluzby
+          Typ služby
         </label>
         <select
           id="serviceType"
           className={inputClasses}
           {...register("serviceType")}
         >
-          <option value="">Vyberte sluzbu</option>
+          <option value="">Vyberte službu</option>
           <option value="obcanske">Občanské právo</option>
           <option value="rodinne">Rodinné právo</option>
           <option value="pracovni">Pracovní právo</option>
           <option value="obchodni">Obchodní právo</option>
+          <option value="korporacni">Korporační právo</option>
+          <option value="insolvencni">Insolvenční právo</option>
           <option value="trestni">Trestní právo</option>
           <option value="spravni">Správní právo</option>
+          <option value="verejne-zakazky">Veřejné zakázky</option>
+          <option value="ustavni">Ústavní právo</option>
           <option value="jine">Jiné</option>
-          <option value="druzstevni">Druzstevni byty</option>
         </select>
       </div>
 
-      {/* Message */}
+      {/* Zpráva */}
       <div>
         <label htmlFor="message" className={labelClasses}>
-          Zprava
+          Zpráva
         </label>
         <textarea
           id="message"
           rows={5}
-          placeholder="Popiste svuj pozadavek..."
+          placeholder="Popište svůj požadavek..."
           className={`${inputClasses} resize-none`}
           {...register("message", {
-            required: "Zprava je povinna",
+            required: "Zpráva je povinná",
             minLength: {
               value: 10,
-              message: "Zprava musi mit alespon 10 znaku",
+              message: "Zpráva musí mít alespoň 10 znaků",
             },
           })}
         />
@@ -162,14 +165,14 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Error */}
+      {/* Chyba */}
       {error && (
         <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
           <p className="text-red-400 text-sm">{error}</p>
         </div>
       )}
 
-      {/* Submit */}
+      {/* Odeslat */}
       <button
         type="submit"
         disabled={isSubmitting}
@@ -178,12 +181,12 @@ export default function ContactForm() {
         {isSubmitting ? (
           <>
             <Loader2 className="w-5 h-5 animate-spin" />
-            Odesilam...
+            Odesílám...
           </>
         ) : (
           <>
             <Send className="w-5 h-5" />
-            Odeslat zpravu
+            Odeslat zprávu
           </>
         )}
       </button>

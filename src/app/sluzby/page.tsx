@@ -28,11 +28,11 @@ export default function SluzbyPage() {
     <div className="pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl text-cream mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#0A0A0A] mb-4">
             Právní služby
           </h1>
           <GoldDivider className="my-6" />
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             Komplexní právní služby v 10 oblastech práva s důrazem na
             srozumitelnost, efektivitu a ochranu vašich zájmů.
           </p>
@@ -45,7 +45,7 @@ export default function SluzbyPage() {
               <Link
                 key={service.slug}
                 href={`/sluzby/${service.slug}`}
-                className="group block bg-dark-lighter border border-dark-lighter rounded-xl p-8 hover:border-gold/30 transition-all duration-300"
+                className="group block bg-gray-50 border border-gray-200 rounded-xl p-8 hover:border-gold/30 transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   {IconComponent && (
@@ -54,10 +54,10 @@ export default function SluzbyPage() {
                     </div>
                   )}
                   <div className="flex-1">
-                    <h2 className="font-serif text-xl text-cream group-hover:text-gold transition-colors mb-2">
+                    <h2 className="font-serif text-xl text-[#0A0A0A] group-hover:text-gold transition-colors mb-2">
                       {service.title}
                     </h2>
-                    <p className="text-gray-400 text-sm mb-4">
+                    <p className="text-gray-500 text-sm mb-4">
                       {service.shortDescription}
                     </p>
                     <ul className="space-y-1">

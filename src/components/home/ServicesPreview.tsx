@@ -31,7 +31,7 @@ export default function ServicesPreview() {
   const previewServices = services.slice(0, 3);
 
   return (
-    <section className="bg-[#F5F0E8] py-24">
+    <section className="bg-[#FAFAF8] py-24">
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -52,7 +52,7 @@ export default function ServicesPreview() {
             return (
               <motion.div
                 key={service.slug}
-                className="bg-white rounded-xl p-8 shadow-sm border border-gray-100"
+                className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-md hover:scale-[1.02] transition-all duration-300"
                 variants={cardVariants}
                 initial="hidden"
                 whileInView="visible"

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
 
 const cardVariants = {
@@ -17,7 +17,7 @@ export default function Testimonials() {
   const displayTestimonials = testimonials.slice(0, 3);
 
   return (
-    <section className="bg-[#F5F0E8] py-24">
+    <section className="bg-[#FAFAF8] py-24">
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -32,13 +32,15 @@ export default function Testimonials() {
           {displayTestimonials.map((testimonial, i) => (
             <motion.div
               key={testimonial.name}
-              className="bg-white p-8 rounded-xl shadow-sm"
+              className="bg-white p-8 rounded-xl shadow-sm relative"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               custom={i}
             >
+              <Quote size={32} className="text-[#C9A84C]/15 absolute top-6 right-6" />
+
               {/* Stars */}
               <div className="flex gap-1 mb-5">
                 {Array.from({ length: 5 }).map((_, starIndex) => (

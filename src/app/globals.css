@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #0A0A0A;
-  --color-foreground: #F5F0E8;
+  --color-background: #ffffff;
+  --color-foreground: #0A0A0A;
   --color-gold: #C9A84C;
   --color-gold-dark: #A8893D;
   --color-gold-light: #D4BA6A;
@@ -36,7 +36,7 @@ html {
 /* Selection color */
 ::selection {
   background: rgba(201, 168, 76, 0.3);
-  color: #F5F0E8;
+  color: #0A0A0A;
 }
 
 /* Scrollbar styling */
@@ -45,11 +45,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #ccc;
   border-radius: 4px;
 }
 

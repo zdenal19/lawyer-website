@@ -51,8 +51,8 @@ export const teamCategories: TeamCategory[] = [
       { name: "JUDr. Daniel Ševčík, Ph.D.", role: "Advokát", photo: "/team/sevcik-daniel.jpg" },
       { name: "Mgr. Václav Rožec", role: "Advokát", photo: "/team/rozec-vaclav.jpg" },
       { name: "JUDr. Ludvík Ševčík, ml.", role: "Advokát", photo: "/team/sevcik-ludvik-ml.jpg" },
-      { name: "Mgr. Bc. Martin Kotrbáček", role: "Advokát", photo: "/team/kotrbacek-martin.jpg" },
-      { name: "Mgr. Zdeněk Vystrčil", role: "Advokát", photo: "/team/vystrcil-zdenek.jpg" },
+      { name: "Mgr. Bc. Martin Kotrbáček, LL.M.", role: "Advokát", photo: "/team/kotrbacek-martin.jpg" },
+      { name: "JUDr. Zdeněk Vystrčil", role: "Advokát", photo: "/team/vystrcil-zdenek.jpg" },
     ],
   },
   {
